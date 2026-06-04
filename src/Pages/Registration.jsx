@@ -9,7 +9,7 @@ const Signup = () => {
                 
                 {/* Conference Title */}
                 <h1 className="text-5xl md:text-6xl font-extrabold text-cyan-300 mb-6 tracking-wide drop-shadow-md">
-                    ICAISDA-2025
+                    ICAISDA-2026
                 </h1>
 
                 {/* Registration Message */}
@@ -29,7 +29,7 @@ const Signup = () => {
             {/* Train-Like Moving Text at Bottom */}
             <div className="absolute bottom-4 w-full h-16 overflow-hidden">
                 <div className="animate-train whitespace-nowrap text-2xl font-medium text-cyan-200">
-                    <span className="mx-6"> Registration Opens Soon  01.05.2025 </span>
+                    <span className="mx-6"> Registration Opens Soon  01.05.2026 </span>
                    
                 </div>
             </div>

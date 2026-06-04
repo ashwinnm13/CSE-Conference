@@ -12,11 +12,11 @@ const Intro = () => {
         />
 
         <h1 className="text-3xl font-bold text-blue-800">
-          The ICAISDA - 2025
+          The ICAISDA - 2026
         </h1>
         <p>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The First International Conference 
-          on Artificial Intelligence and Secure Data Analytics (ICAISDA-2025) 
+          on Artificial Intelligence and Secure Data Analytics (ICAISDA-2026) 
           provides a global platform for researchers, academics, scientists, 
           industry professionals, and students to discuss advancements in 
           Artificial Intelligence and Secure Data Analytics. AI replicates 
@@ -29,7 +29,7 @@ const Intro = () => {
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The integration of Artificial Intelligence
            and Secure Data Analytics is key to advancing technology while safeguarding privacy, 
            security, and efficiency in the digital age, protecting digital ecosystems and countering 
-           cyber threats. ICAISDA-2025 fosters collaboration among global academic institutions, 
+           cyber threats. ICAISDA-2026 fosters collaboration among global academic institutions, 
            scientific organizations, and industry leaders, offering valuable networking and research 
            opportunities. It encourages presentations, sharing best practices, and proposing actionable 
            strategies to leverage Artificial Intelligence and Secure Data Analytics in addressing evolving 

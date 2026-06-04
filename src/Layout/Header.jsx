@@ -56,7 +56,7 @@ const Header = () => {
       <div className="flex w-[95%] md:w-[85%] gap-3 justify-between md:items-center py-3 px-4 text-xs">
         <div className="flex items-center justify-center md:w-[40%] pr-8">
           <img src={MainLogo} className="mr-5 w-[45px] md:w-[70px]" alt="Logo" />
-          <h1 className="text-xl font-medium text-nowrap">ICAISDA 2025</h1>
+          <h1 className="text-xl font-medium text-nowrap">ICAISDA 2026</h1>
         </div>
 
         <div className="hidden md:flex gap-3 justify-around items-center">

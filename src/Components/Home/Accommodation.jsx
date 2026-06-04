@@ -13,7 +13,7 @@ const Accommodation = () => {
           <p>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The organizing committee 
            is pleased to offer a variety of accommodation options for 
-           participants attending the ICAISDA-2025 Conference.
+           participants attending the ICAISDA-2026 Conference.
            Several hotels are located in close proximity to Puducherry Technological University
            and in Puducherry Town, which is 7 km away from the University. 
            These hotels offer a range of comfort and pricing to suit different 

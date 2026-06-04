@@ -41,7 +41,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center space-x-3 mb-6">
           </div>
-          <h1 className="text-6xl font-bold">ICAISDA-2025</h1>
+          <h1 className="text-6xl font-bold">ICAISDA-2026</h1>
           <p className="text-2xl text-white max-w-4xl mx-auto mt-2">
             First International Conference on Artificial Intelligence and Secure Data Analytics
           </p>

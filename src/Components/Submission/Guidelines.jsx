@@ -74,7 +74,7 @@ const Guidelines = () => {
         ))}
         
         <div className="text-justify mt-6 text-white/80 text-dt">
-          © 2025 ICAISDA Conference. All rights reserved.
+          © 2026 ICAISDA Conference. All rights reserved.
         </div>
       </div>
     </div>

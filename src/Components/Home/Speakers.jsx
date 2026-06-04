@@ -60,10 +60,10 @@ const Speakers = () => {
         <table className="md:text-lg border-separate border-spacing-3 text-white w-full">
           <tbody>
             {[
-              ["Full Paper Submission Deadline", "1st July2025"],
-              ["Acceptance Intimation", "1st August 2025"],
-              ["Registration Deadline", "1st September 2025"],
-              ["Conference Date", "29-30 December 2025"],
+              ["Full Paper Submission Deadline", "1st July2026"],
+              ["Acceptance Intimation", "1st August 2026"],
+              ["Registration Deadline", "1st September 2026"],
+              ["Conference Date", "29-30 December 2026"],
             ].map((row, index) => (
               <tr
                 key={index}

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="flex w-full relative justify-center py-3 bg-black text-white">
       <div className="px-3">
         <h1 className="text-lg font-semibold py-2">
-          Copyright ©2025{" "}
+          Copyright ©2026{" "}
           <a
             className="text-gray-400 hover:underline"
             target="_blank"

@@ -14,11 +14,11 @@ const Hero = () => {
             FIRST INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND SECURE DATA ANALYTICS
           </h1>
           <h2 className="py-2 mt-2 px-4 bg-blue-800 text-white text-xl md:text-2xl rounded-full max-w-fit">
-            ICAISDA-2025
+            ICAISDA-2026
           </h2>
           <div className="mt-4 flex items-center gap-3 md:text-xl">
             <FaCalendarAlt />
-            <p>December 29-30, 2025</p>
+            <p>December 29-30, 2026</p>
           </div>
 
           {/* Move "DEPARTMENT OF COMPUTER SCIENCE" Down */}
