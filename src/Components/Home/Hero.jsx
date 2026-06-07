@@ -11,14 +11,14 @@ const Hero = () => {
         <div className="py-4 px-6 md:pl-24">
           <img src={icdnLogo} alt="logo" className="w-20 md:w-36" />
           <h1 className="text-xl md:text-3xl text-blue-800 font-semibold leading-relaxed">
-            FIRST INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND SECURE DATA ANALYTICS
+            SECOND INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND SECURE DATA ANALYTICS
           </h1>
           <h2 className="py-2 mt-2 px-4 bg-blue-800 text-white text-xl md:text-2xl rounded-full max-w-fit">
             ICAISDA-2026
           </h2>
           <div className="mt-4 flex items-center gap-3 md:text-xl">
             <FaCalendarAlt />
-            <p>December 29-30, 2026</p>
+            <p>12- 13, November, 2026</p>
           </div>
 
           {/* Move "DEPARTMENT OF COMPUTER SCIENCE" Down */}

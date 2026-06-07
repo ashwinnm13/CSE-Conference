@@ -5,11 +5,11 @@ import backgroundImage from "../../assets/Images/cs2.jpg"; // Add your backgroun
 
 const ProfessorCard = (props) => {
   return (
-    <div className="border bg-white p-4 rounded-xl hover:scale-105 text-center transition-all hover:bg-blue-50 shadow-lg shadow-blue-900">
+    <div className="border bg-white p-5 rounded-xl hover:scale-105 text-center transition-all hover:bg-blue-50 shadow-lg shadow-blue-900 w-full h-[180px] flex flex-col justify-center">
       <h1 className="font-bold text-blue-800 text-lg">{props.name}</h1>
       <h1 className="flex items-center gap-2 text-left">
         <FaGraduationCap size={20} className="text-blue-700" />
-        Professor, CSE, Puducherry Technological University
+        {props.designation}, CSE, Puducherry Technological University, Puducherry, India
       </h1>
       <h1 className="flex gap-2 items-center">
         <FaMobileAlt className="text-blue-700" /> Cell: {props.number}
@@ -38,10 +38,11 @@ const ContactHome = () => {
           <div className="px-4 py-5">
             <h1 className="text-2xl font-bold text-center text-white">QUERIES RELATED TO PUBLICATION</h1>
           </div>
-          <div className="px-4 py-5 flex gap-8 flex-wrap justify-center">
-            <ProfessorCard name={"Dr. R. Kalpana"} number={"+91 9443051212"} mail={"icaisda-pub@ptuniv.edu.in"} />
-            <ProfessorCard name={"Dr. K. Saruladha"} number={"+91 9442396080"} mail={"icaisda-pub@ptuniv.edu.in"} />
-            <ProfessorCard name={"Dr. V. Akila"} number={"+91 9786853753"} mail={"icaisda-pub@ptuniv.edu.in"} />
+          <div className="px-4 py-5 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+            <ProfessorCard name={"Dr. K. Saruladha"} designation={"Professor"} number={"+91 9442396080"} mail={"icaisda-pub@ptuniv.edu.in"} />
+            <ProfessorCard name={"Dr. P. Salini"} designation={"Associate Professor"} number={"+91 9994738640"} mail={"icaisda-pub@ptuniv.edu.in"} />
+            <ProfessorCard name={"Dr. M. Thenmozhi"} designation={"Associate Professor"} number={"+91 9500893708"} mail={"icaisda-pub@ptuniv.edu.in"} />
+            <ProfessorCard name={"Dr. J.I. Sheeba"} designation={"Associate Professor"} number={"+91 9443084976"} mail={"icaisda-pub@ptuniv.edu.in"} />
           </div>
         </div>
 
@@ -50,9 +51,9 @@ const ContactHome = () => {
           <div className="px-4 py-5">
             <h1 className="text-2xl font-bold text-center text-white">QUERIES RELATED TO HOSPITALITY AND LOCAL SIGHTSEEING</h1>
           </div>
-          <div className="px-4 py-5 flex gap-8 flex-wrap justify-center">
-            <ProfessorCard name={"Dr. M. Thirumaran"} number={"+91 9894593367"} mail={"icaisda-hos@ptuniv.edu.in"} />
-            <ProfessorCard name={"Dr. N. Sivakumar"} number={"+91 9840901054"} mail={"icaisda-hos@ptuniv.edu.in"} />
+          <div className="px-4 py-5 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+            <ProfessorCard name={"Dr. M. Thirumaran"} designation={"Professor"} number={"+91 9894593367"} mail={"icaisda-hos@ptuniv.edu.in"} />
+            <ProfessorCard name={"Dr. N. Sivakumar"} designation={"Professor"} number={"+91 9840901054"} mail={"icaisda-hos@ptuniv.edu.in"} />
           </div>
         </div>
       </div>
@@ -61,3 +62,4 @@ const ContactHome = () => {
 };
 
 export default ContactHome;
+

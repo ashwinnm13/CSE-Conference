@@ -1,26 +1,23 @@
 import React, { useEffect, useState, useRef } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
-import Athirai from "../assets/Images/athirai2.png";
-import Balaji from "../assets/Images/Balaji.png";
-import Ganapati from "../assets/Images/Ganapati.png";
-import Rajarajan from "../assets/Images/Rajarajan.png";
-import Shamik from "../assets/Images/Shamik.jpg";
-import Shlomi from "../assets/Images/shlomi.jpg";
-import Sumitra from "../assets/Images/Sumitra.png";
+import KrishnaMohan from "../assets/images/keynote 2026/Dr.C.Krishna Mohan.jpg";
+import PeterRevesz from "../assets/images/keynote 2026/Dr.Peter Z. Revesz.jpg";
+import Balaji from "../assets/images/keynote 2026/Dr.Balaji Palanisamy.jpg";
+import Rajarajan from "../assets/images/keynote 2026/Dr.Rajarajan Sivaraj.png";
 
 const SpeakerCard = ({ image, name, title, organization, topic }) => (
-  <div className="bg-white w-[300px] h-full rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+  <div className="bg-white w-full h-full rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col">
     <div className="h-[300px] flex justify-center items-center overflow-hidden bg-gray-100">
       <img src={image} alt={name} className="w-full h-full object-cover" />
     </div>
-    <div className="p-4">
+    <div className="p-4 flex-1 flex flex-col">
       <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{name}</h3>
       <p className="text-gray-600 font-medium text-center">{title}</p>
       <p className="text-gray-500 text-sm text-center">{organization}</p>
       {topic && (
         <div className="mt-4 border-t border-gray-200 pt-2">
-          <p className="text-sm font-medium text-gray-900">Topic:</p>
+          <p className="text-sm font-medium text-gray-900">Keynote:</p>
           <p className="text-sm text-gray-600 italic">{topic}</p>
         </div>
       )}
@@ -36,20 +33,36 @@ const SectionTitle = ({ title }) => (
 );
 
 function Speakers() {
-  const speakers = {
-    keynote: [
-      { image: Shlomi, name: "Dr. Shlomi Dolev", title: "Professor", organization: "Ben-Gurion University of the Negev, Israel", topic: "Confronting Hallucinating LLMs with Reality to Function as Informed Data (Security) Experts" },
-      { image: Balaji, name: "Dr. Balaji Palanisamy", title: "Director of Graduate Studies", organization: "University of Pittsburgh, USA", topic: "Protecting Data Privacy in an Eve-growing Data-rich World" },
-      { image: Shamik, name: "Dr. Shamik Sural", title: "Professor", organization: "IIT Kharagpur", topic: "Recent Advances and Future Directions in Access Control Research" }
-    ],
-    invited: [
-      { image: Sumitra, name: "Dr. S. Sumitra", title: "Professor", organization: "Indian Institute of Space Science and Technology, Thiruvananthapuram", topic: "Machine Learning for Graph Analysis" }
-    ],
-    industry: [
-      { image: Rajarajan, name: "Dr. Rajarajan Sivaraj", title: "Group Director, RAN AI Systems Architecture", organization: "Mavenir, USA", topic: "Scalable and Practical AI for Generating Intelligence and Improving Performance in Large-scale Telecommunication Deployments" },
-      { image: Athirai, name: "Athirai A.", title: "Principal Machine Learning Engineer", organization: "Applied Science, Walmart, USA", topic: "Gen AI: Above and Beyond" }
-    ]
-  };
+  const keynoteSpeakers = [
+    {
+      image: KrishnaMohan,
+      name: "Dr. C. Krishna Mohan",
+      title: "Professor",
+      organization: "Department of Computer Science and Engineering, IIT Hyderabad",
+      topic: null
+    },
+    {
+      image: PeterRevesz,
+      name: "Dr. Peter Z. Revesz",
+      title: "Professor",
+      organization: "University of Nebraska-Lincoln, Lincoln, USA",
+      topic: "Computational Decipherment of the Indus Valley Script: Recent Progress and Future Possibilities"
+    },
+    {
+      image: Balaji,
+      name: "Dr. Balaji Palanisamy",
+      title: "Associate Professor, School of Computing and Information",
+      organization: "University of Pittsburgh, USA",
+      topic: "Adversarial Attacks in Virtual Reality: Detection, Prevention, and Defense"
+    },
+    {
+      image: Rajarajan,
+      name: "Dr. Rajarajan Sivaraj",
+      title: "Vice President of Solution Architecture",
+      organization: "Aira Technologies, USA",
+      topic: "INTelligence-of-Things: scalable and practical AI for large-scale operational systems"
+    }
+  ];
 
   const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
@@ -86,16 +99,10 @@ function Speakers() {
           <p className="text-xl text-gray-700 mt-2">Join us in welcoming world-renowned experts in technology and innovation</p>
         </div>
 
-        <div className="space-y-24">
-          {Object.entries(speakers).map(([category, speakersList]) => (
-            <section key={category}>
-              <SectionTitle title={category.charAt(0).toUpperCase() + category.slice(1) + " Speakers"} />
-              <div className="flex flex-wrap justify-center gap-8">
-                {speakersList.map((speaker, idx) => (
-                  <SpeakerCard key={idx} {...speaker} />
-                ))}
-              </div>
-            </section>
+        <SectionTitle title="Keynote Speakers" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          {keynoteSpeakers.map((speaker, idx) => (
+            <SpeakerCard key={idx} {...speaker} />
           ))}
         </div>
       </div>
@@ -104,3 +111,4 @@ function Speakers() {
 }
 
 export default Speakers;
+

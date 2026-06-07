@@ -29,7 +29,7 @@ const Signup = () => {
             {/* Train-Like Moving Text at Bottom */}
             <div className="absolute bottom-4 w-full h-16 overflow-hidden">
                 <div className="animate-train whitespace-nowrap text-2xl font-medium text-cyan-200">
-                    <span className="mx-6"> Registration Opens Soon  01.05.2026 </span>
+                    <span className="mx-6"> Registration Opens Soon  06.09.2026 </span>
                    
                 </div>
             </div>
