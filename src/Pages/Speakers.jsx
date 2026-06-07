@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
-import KrishnaMohan from "../assets/images/keynote 2026/Dr.C.Krishna Mohan.jpg";
-import PeterRevesz from "../assets/images/keynote 2026/Dr.Peter Z. Revesz.jpg";
-import Balaji from "../assets/images/keynote 2026/Dr.Balaji Palanisamy.jpg";
-import Rajarajan from "../assets/images/keynote 2026/Dr.Rajarajan Sivaraj.png";
+import KrishnaMohan from "../assets/Images/keynote 2026/Dr.C.Krishna Mohan.jpg";
+import PeterRevesz from "../assets/Images/keynote 2026/Dr.Peter Z. Revesz.jpg";
+import Balaji from "../assets/Images/keynote 2026/Dr.Balaji Palanisamy.jpg";
+import Rajarajan from "../assets/Images/keynote 2026/Dr.Rajarajan Sivaraj.png";
 
 const SpeakerCard = ({ image, name, title, organization, topic }) => (
   <div className="bg-white w-full h-full rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col">

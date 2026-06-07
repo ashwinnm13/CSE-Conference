@@ -4,7 +4,7 @@ import krishnamohan from "../../assets/Images/keynote 2026/Dr.C.Krishna Mohan.jp
 import peterrevesz from "../../assets/Images/keynote 2026/Dr.Peter Z. Revesz.jpg";
 import balaji from "../../assets/Images/keynote 2026/Dr.Balaji Palanisamy.jpg";
 import rajarajan from "../../assets/Images/keynote 2026/Dr.Rajarajan Sivaraj.png";
-import nirfBanner from "../../assets/images/nirf banner.png";
+import nirfBanner from "../../assets/Images/nirf banner.png";
 
 const Speakers = () => {
   const speakers = [
