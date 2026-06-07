@@ -3,14 +3,14 @@ import React from "react";
 const Speakers = () => {
   const speakers = [
     {
-      image: "/images/keynote-2026/krishna-mohan.jpg",
+      image: "public/images/keynote-2026/krishna-mohan.jpg",
       name: "Dr. C. Krishna Mohan",
       designation: "Professor",
       university: "Department of Computer Science and Engineering, IIT Hyderabad",
       keynote: "Keynote Speaker",
     },
     {
-      image: "/images/keynote-2026/peter-revesz.jpg",
+      image: "public/images/keynote-2026/peter-revesz.jpg",
       name: "Dr. Peter Z. Revesz",
       designation: "Professor",
       university: "University of Nebraska-Lincoln, Lincoln, USA",
@@ -18,7 +18,7 @@ const Speakers = () => {
         "Computational Decipherment of the Indus Valley Script: Recent Progress and Future Possibilities",
     },
     {
-      image: "/images/keynote-2026/balaji-palanisamy.jpg",
+      image: "public/images/keynote-2026/balaji-palanisamy.jpg",
       name: "Dr. Balaji Palanisamy",
       designation: "Associate Professor",
       university: "School of Computing and Information, University of Pittsburgh, USA",
@@ -26,7 +26,7 @@ const Speakers = () => {
         "Adversarial Attacks in Virtual Reality: Detection, Prevention, and Defense",
     },
     {
-      image: "/images/keynote-2026/rajarajan-sivaraj.png",
+      image: "public/images/keynote-2026/rajarajan-sivaraj.png",
       name: "Dr. Rajarajan Sivaraj",
       designation: "Vice President of Solution Architecture",
       university: "Aira Technologies, USA",
@@ -90,7 +90,7 @@ const Speakers = () => {
       {/* NIRF Banner */}
       <div className="mt-10 max-w-3xl w-full mx-4">
         <img
-          src="/images/nirf-banner.png"
+          src="public/images/nirf-banner.png"
           alt="NIRF Banner"
           className="w-full rounded-xl shadow-lg"
         />

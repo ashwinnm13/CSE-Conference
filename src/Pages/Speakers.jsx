@@ -31,28 +31,28 @@ const SectionTitle = ({ title }) => (
 function Speakers() {
   const keynoteSpeakers = [
     {
-      image: "/images/keynote-2026/krishna-mohan.jpg",
+      image: "public/images/keynote-2026/krishna-mohan.jpg",
       name: "Dr. C. Krishna Mohan",
       title: "Professor",
       organization: "Department of Computer Science and Engineering, IIT Hyderabad",
       topic: null
     },
     {
-      image: "/images/keynote-2026/peter-revesz.jpg",
+      image: "public/images/keynote-2026/peter-revesz.jpg",
       name: "Dr. Peter Z. Revesz",
       title: "Professor",
       organization: "University of Nebraska-Lincoln, Lincoln, USA",
       topic: "Computational Decipherment of the Indus Valley Script: Recent Progress and Future Possibilities"
     },
     {
-      image: "/images/keynote-2026/balaji-palanisamy.jpg",
+      image: "public/images/keynote-2026/balaji-palanisamy.jpg",
       name: "Dr. Balaji Palanisamy",
       title: "Associate Professor",
       organization: "School of Computing and Information, University of Pittsburgh, USA",
       topic: "Adversarial Attacks in Virtual Reality: Detection, Prevention, and Defense"
     },
     {
-      image: "/images/keynote-2026/rajarajan-sivaraj.png",
+      image: "public/images/keynote-2026/rajarajan-sivaraj.png",
       name: "Dr. Rajarajan Sivaraj",
       title: "Vice President of Solution Architecture",
       organization: "Aira Technologies, USA",
