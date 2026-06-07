@@ -1,9 +1,7 @@
 import React from "react";
-import profilePlaceHolder from "../../assets/Images/profilePlaceHolder.jpg";
-import nirfBanner from "../../assets/images/nirf banner.png";
 
 const Speakers = () => {
-  const keynoteSpeakers = [
+  const speakers = [
     {
       image: "/images/keynote-2026/krishna-mohan.jpg",
       name: "Dr. C. Krishna Mohan",
@@ -43,13 +41,13 @@ const Speakers = () => {
         Keynote Speakers
       </h2>
       <div className="mt-6 md:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-10">
-        {keynoteSpeakers.map((ele, ind) => (
+        {speakers.map((ele, ind) => (
           <div className="flex flex-col items-center" key={ind}>
             <div className="min-w-40 min-h-40 md:min-w-48 md:min-h-48 max-w-48 max-h-48 relative rounded-full flex justify-center items-center group cursor-pointer">
               <div className="absolute bg-blue-500 w-full h-full rounded-full -z-10 -translate-x-2 -translate-y-2 shadow-lg"></div>
               <img
                 src={ele.image}
-                alt="Keynote Speaker Picture"
+                alt={`Portrait of ${ele.name}`}
                 className="absolute w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-blue-400 object-cover"
               />
             </div>
@@ -92,7 +90,7 @@ const Speakers = () => {
       {/* NIRF Banner */}
       <div className="mt-10 max-w-3xl w-full mx-4">
         <img
-          src={nirfBanner}
+          src="/images/nirf-banner.png"
           alt="NIRF Banner"
           className="w-full rounded-xl shadow-lg"
         />
@@ -139,7 +137,6 @@ const Speakers = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-yellow-300 drop-shadow-lg">
           Important Dates
         </h1>
-
         <table className="md:text-lg border-separate border-spacing-3 text-white w-full">
           <tbody>
             {[
