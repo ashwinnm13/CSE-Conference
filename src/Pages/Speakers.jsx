@@ -1,15 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
-import KrishnaMohan from "../assets/images/keynote 2026/Dr.C.Krishna Mohan.jpg";
-import PeterRevesz from "../assets/images/keynote 2026/Dr.Peter Z. Revesz.jpg";
-import Balaji from "../assets/images/keynote 2026/Dr.Balaji Palanisamy.jpg";
-import Rajarajan from "../assets/images/keynote 2026/Dr.Rajarajan Sivaraj.png";
 
 const SpeakerCard = ({ image, name, title, organization, topic }) => (
   <div className="bg-white w-full h-full rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col">
     <div className="h-[300px] flex justify-center items-center overflow-hidden bg-gray-100">
-      <img src={image} alt={name} className="w-full h-full object-cover" />
+      <img src={image} alt={`Portrait of ${name}`} className="w-full h-full object-cover" />
     </div>
     <div className="p-4 flex-1 flex flex-col">
       <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{name}</h3>
@@ -35,28 +31,28 @@ const SectionTitle = ({ title }) => (
 function Speakers() {
   const keynoteSpeakers = [
     {
-      image: KrishnaMohan,
+      image: "/images/keynote-2026/krishna-mohan.jpg",
       name: "Dr. C. Krishna Mohan",
       title: "Professor",
       organization: "Department of Computer Science and Engineering, IIT Hyderabad",
       topic: null
     },
     {
-      image: PeterRevesz,
+      image: "/images/keynote-2026/peter-revesz.jpg",
       name: "Dr. Peter Z. Revesz",
       title: "Professor",
       organization: "University of Nebraska-Lincoln, Lincoln, USA",
       topic: "Computational Decipherment of the Indus Valley Script: Recent Progress and Future Possibilities"
     },
     {
-      image: Balaji,
+      image: "/images/keynote-2026/balaji-palanisamy.jpg",
       name: "Dr. Balaji Palanisamy",
-      title: "Associate Professor, School of Computing and Information",
-      organization: "University of Pittsburgh, USA",
+      title: "Associate Professor",
+      organization: "School of Computing and Information, University of Pittsburgh, USA",
       topic: "Adversarial Attacks in Virtual Reality: Detection, Prevention, and Defense"
     },
     {
-      image: Rajarajan,
+      image: "/images/keynote-2026/rajarajan-sivaraj.png",
       name: "Dr. Rajarajan Sivaraj",
       title: "Vice President of Solution Architecture",
       organization: "Aira Technologies, USA",
@@ -96,7 +92,9 @@ function Speakers() {
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-black">Distinguished Speakers</h1>
-          <p className="text-xl text-gray-700 mt-2">Join us in welcoming world-renowned experts in technology and innovation</p>
+          <p className="text-xl text-gray-700 mt-2">
+            Join us in welcoming world-renowned experts in technology and innovation
+          </p>
         </div>
 
         <SectionTitle title="Keynote Speakers" />
@@ -111,4 +109,3 @@ function Speakers() {
 }
 
 export default Speakers;
-
