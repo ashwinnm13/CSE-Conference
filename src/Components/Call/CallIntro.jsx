@@ -1,6 +1,89 @@
 import React, { useState } from "react";
 import { Brain, Shield, Calendar, MapPin, Users } from "lucide-react";
 
+const aiTopics = [
+  "Machine Learning and Deep Learning",
+  "Large Language Models and Transformers",
+  "AI Algorithms and Architectures",
+  "Reinforcement Learning and Autonomous Systems",
+  "AI for Sustainable Development",
+  "Generative, Responsive, and Explainable AI",
+  "Quantum Machine Learning and Quantum Algorithms",
+  "Automated Code Generation and Algorithm Optimization",
+  "Information Theory for AI",
+  "Statistical Learning Theory in AI",
+  "Graphical Models and Probabilistic Inference",
+  "Representation Learning and Feature Engineering",
+  "Human–Machine Interaction and Data Capturing Techniques",
+  "AI and Blockchain Technology",
+  "AI Model Optimization and Efficiency",
+  "Bias, Fairness, and Ethics in AI Models",
+  "AI-Powered Cloud Resource Allocation",
+  "Natural Language Processing and Speech Recognition",
+  "Computer Vision and Image Processing",
+  "Agentic AI and Intelligent Agents",
+  "AI and Emerging Technologies"
+];
+
+const aiApplicationsTopics = [
+  "AI in Healthcare and Medicine",
+  "AI in Supply Chain Management and Automation",
+  "AI in Smart Agriculture",
+  "AI in Financial Systems and FinTech",
+  "AI and the Internet of Things (IoT)",
+  "AI in Cybersecurity and Privacy",
+  "AI in Smart Cities and Urban Planning",
+  "AI in Education and Intelligent Learning Systems",
+  "AI in Robotics and Autonomous Systems",
+  "AI in Manufacturing and Industry 4.0",
+  "AI in Environmental Monitoring and Climate Science",
+  "AI in Energy Management and Smart Grids",
+  "AI for Social Good and Sustainable Development",
+  "AI in Digital Governance and E-Governance",
+  "AI in Blockchain and Decentralized Systems"
+];
+
+const secureDataAnalyticsTopics = [
+  "Encryption Methods for Data Analysis",
+  "Applications of Data Analytics in Security Domains",
+  "Data Analytics for Security Attacks and Defenses",
+  "Secure Social Network Analysis and Mining",
+  "Stream Data Analytics for Cybersecurity",
+  "Privacy in Big Data Management and Analytics",
+  "Security Issues in Supply Chain Analytics",
+  "Security Issues in Computer Vision and Video Analytics",
+  "Privacy-Preserving Big Data Analytics",
+  "Network and Information Security Using Data Analytics",
+  "Fraud Detection and Risk Management",
+  "Threat Intelligence and Incident Response",
+  "Blockchain and Data Security",
+  "Privacy, Surveillance, and AI Ethics",
+  "Secure Software Development",
+  "Leveraging AI for Enhanced Cybersecurity",
+  "Advances in Data Science and Analytics"
+];
+
+const secureCommunicationsTopics = [
+  "Secure Edge and Fog Computing",
+  "High-Performance Secure Computing Systems",
+  "Pervasive and Mobile Computing",
+  "Prompt and Cognitive Computing",
+  "Quantum Computing",
+  "Secure Wireless Communication",
+  "Network Protocols and Congestion Control",
+  "Sustainable Communication and Computing",
+  "Quantum Communication and Cryptography",
+  "Secure Vehicular Networks and Communication",
+  "Intelligent Sensors and Sensor Networks",
+  "Blockchain for Secure Communication",
+  "Secure Next-Generation Networks",
+  "Multimedia Processing and Communication",
+  "Ad Hoc, PAN, and Mesh Networks",
+  "Communication Challenges in IoT and Resource-Constrained Devices",
+  "Network Function Virtualization and Software-Defined Networking",
+  "Networking and Computing for Sustainability, Society, and Development"
+];
+
 const workshops = [
   { title: "1st International Workshop on AI-driven Smart Applications", topics: [
     "AI for Smart Healthcare and Telemedicine","Intelligence Automations in Finance, Business and Economics", 
@@ -43,7 +126,7 @@ const App = () => {
           </div>
           <h1 className="text-6xl font-bold">ICAISDA-2026</h1>
           <p className="text-2xl text-white max-w-4xl mx-auto mt-2">
-            First International Conference on Artificial Intelligence and Secure Data Analytics
+            Second International Conference on Artificial Intelligence and Secure Data Analytics
           </p>
          
         </div>
@@ -51,20 +134,27 @@ const App = () => {
 
       {/* Main Content Section */}
       <div className="flex-1 w-full max-w-7xl mx-auto px-6 py-16">
-        {/* Call for Papers */}
+        {/* Call for Papers Introduction */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Call for Papers</h2>
-          <p className="text-lg text-gray-700">
-            Submit research papers in <span className="font-bold text-blue-700">Artificial Intelligence</span> and <span className="font-bold text-blue-700">Secure Data Analytics</span>.
+          <p className="text-lg text-gray-700 mb-6">
+            The <span className="font-bold text-blue-700">Second International Conference on Artificial Intelligence and Secure Data Analytics (ICAISDA-2026)</span> invites researchers, academicians, scientists, industry professionals, and practitioners to submit original and unpublished research contributions, including research papers, case studies, survey articles, and innovative applications. Submissions are solicited on a broad range of topics, including but not limited to the following:
           </p>
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-4">
+          
+          <h3 className="text-2xl font-bold text-gray-800 mb-6 mt-8">Scope</h3>
+          <p className="text-lg text-gray-700 mb-8">
+            Scope of the conference tentatively includes, but is not limited to:
+          </p>
+
+          <div className="mt-8 flex flex-col md:flex-row justify-center gap-4 flex-wrap">
             {[
-              ['ai', 'Artificial Intelligence Topics', <Brain className="w-5 h-5" />],
-              ['security', 'Secure Data Analytics Topics', <Shield className="w-5 h-5" />],
+              ['ai', 'Artificial Intelligence', <Brain className="w-5 h-5" />],
+              ['aiApplications', 'AI Applications in Industry and Society', <Brain className="w-5 h-5" />],
+              ['security', 'Secure Data Analytics', <Shield className="w-5 h-5" />],
+              ['communications', 'Secure Communications and Computing', <Shield className="w-5 h-5" />],
               ['workshops', 'Workshops', <Users className="w-5 h-5" />]
             ].map(([id, label, icon]) => (
               <button key={id} onClick={() => setActiveSection(activeSection === id ? null : id)}
-                className={`flex items-center space-x-2 px-6 py-3 rounded-lg text-lg font-bold transition ${activeSection === id ? 'bg-blue-600 text-white font-bold' : 'bg-blue-200 text-blue-700 hover:bg-blue-200'}`}>
+                className={`flex items-center space-x-2 px-6 py-3 rounded-lg text-lg font-bold transition whitespace-nowrap ${activeSection === id ? 'bg-blue-600 text-white font-bold' : 'bg-blue-200 text-blue-700 hover:bg-blue-300'}`}>
                 {icon}<span>{label}</span>
               </button>
             ))}
@@ -72,26 +162,10 @@ const App = () => {
         </div>
 
         {/* Dynamic Sections */}
-        {activeSection === 'ai' && <Section title="Artificial Intelligence Topics" topics={[
-          "Machine Learning and Deep Learning", "Large Language Models", "AI Algorithms and Architectures",
-          "Reinforcement Learning", "AI for Sustainable Development", "Computer Vision and Image Processing",
-          "AI in Emerging Technologies", "Bias and Fairness in AI Models", "AI and Blockchain Technology",
-          "AI Model Optimization and Efficiency",	"Bias and Fairness in AI Models","AI and Quantum Computing",
-          "AI and Internet of Things (IoT)","AI-powered Cloud Resource Allocation","AI for Natural Language Processing and Speech Recognition",
-          "Computer Vision and Image Processing","Agentic AI and its Impact","AI and Emerging Technologies",
-        ]} />}
-        {activeSection === 'security' && <Section title="Secure Data Analytics Topics" topics={[
-          	"Privacy-preserving Machine Learning and Artificial Intelligence","Encryption Methods for Data Analysis",
-            "Applications of Data Analytics in Security Domains","Data analytics for Security Attacks and Defenses",
-            "Secure Social Network Analysis and Mining","Stream Data Analytics for Cyber Security",
-            "Privacy in Big Data Management and Analytics","Security Issues in Supply Chain Analytics",
-            "Security Issues in Computer Vision and Video Analytics","Industry Applications of Privacy-preserving in Big Data Analytic",
-            "Network and Information Security Using Data Analytics","Fraud Detection and Risk Management",
-            "Threat Intelligence and Incident Response","Blockchain and Data Security",
-            "Privacy, Surveillance and AI Ethics","Secure Software Development",
-            "Leveraging AI for Enhanced Cybersecurity","Advances in Data Science and Analytics",
-          
-        ]} />}
+        {activeSection === 'ai' && <Section title="Artificial Intelligence" topics={aiTopics} />}
+        {activeSection === 'aiApplications' && <Section title="AI Applications in Industry and Society" topics={aiApplicationsTopics} />}
+        {activeSection === 'security' && <Section title="Secure Data Analytics" topics={secureDataAnalyticsTopics} />}
+        {activeSection === 'communications' && <Section title="Secure Communications and Computing" topics={secureCommunicationsTopics} />}
         {activeSection === 'workshops' && <WorkshopSection activeWorkshop={activeWorkshop} setActiveWorkshop={setActiveWorkshop} />}
       </div>
     </div>

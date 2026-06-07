@@ -6,27 +6,32 @@ const content = [
   {
     title: "GUIDELINES FOR AUTHORS",
     icon: <ScrollText className="w-10 h-10" />,
-    paragraph: ["Prospective authors are encouraged to submit research papers not exceeding 10 pages in single line spacing, including all figures, tables, and references.",
-               "Further details on formatting will be provided once the publishers/journals are finalized.", 
-               "Only original papers that have not been published or submitted for publication elsewhere will be considered.", 
-               "Every submission must be accompanied by a plagiarism report, with a similarity index not exceeding 10%.",
-               "The ICAISDA will ensure quality through a rigorous review process.",
-               "Submissions can be made to the main conference or co-located workshops.",
-               "Papers not accepted for the main conference will be considered for the workshop if the contributions of the papers are suitable for the workshop.",
-               "The organizers may transfer papers between tracks with the consent of the authors."
+    paragraph: [
+      "Prospective authors are invited to submit original and unpublished research papers, case studies, and innovative applications in the areas of Artificial Intelligence, Secure Data Analytics and Secure Communications and Computing.",
+      "Manuscripts should not exceed 10 pages, including figures, tables, and references.",
+      "All submissions must clearly highlight the research problem, methodology, key findings, and contributions.",
+      "To ensure academic integrity, each manuscript must be accompanied by a plagiarism report with an overall similarity index not exceeding 10%.",
+      "All submissions to ICAISDA-2026 will undergo a rigorous peer-review process conducted by the Conference Programme Committee to ensure the quality and relevance of accepted papers.",
+      "Information regarding the conference proceedings and publication opportunities in Journals will be updated upon finalization of the publisher.",
+      "The proceedings of ICAISDA-2025 were published by Springer Nature through the Atlantis Press series, and selected extended papers were published in Gongcheng Kexue Yu Jishu (Advanced Engineering Journal), a Scopus-indexed journal, with concessional Article Processing Charges (APC)."
     ]
   },
   {
     title: "Registration Fee and Article Publication Charges",
     icon: <CreditCard className="w-10 h-10" />,
-    paragraph:`Each submission may have one main author and up to three co-authors. Only papers that are registered and presented at the main conference or co-located workshops will be considered for publication. The organizers are currently in negotiations with leading publishers of conference proceedings and journals. Once these negotiations are finalized, authors will be required to pay the Registration Fee and Article Processing Charges (APC). Updates will be posted on the website and communicated via email.`
-   },
+    paragraph: [
+      "Each paper submission may include one corresponding author and up to two co-authors.",
+      "Only papers that are accepted through the review process and presented at the conference will be eligible for inclusion in the conference proceedings and consideration for subsequent publication opportunities.",
+      "Upon acceptance, at least one author must complete the registration process for the paper to be included in the conference programme.",
+      "Details regarding registration fees and payment procedures will be communicated to authors through email and published on the conference website."
+    ]
+  },
   {
     title: "Best Paper Award",
     icon: <Award className="w-10  h-10" />,
     paragraph: [
-      "The Best Paper Award will be awarded.",
-      "More details about the award will be updated on the conference website."
+      "The Best Paper Award will be awarded to exceptional contributions.",
+      "More details about the award criteria and selection process will be updated on the conference website."
     ]
   }
 ];

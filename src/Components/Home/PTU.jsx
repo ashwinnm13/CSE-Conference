@@ -17,28 +17,22 @@ const PTU = () => {
         <div className="w-[90%] md:w-[60%] px-1 md:px-0">
           <h1 className="text-3xl font-bold pb-10 text-blue-800">Puducherry Technological University-(PTU)</h1>
           <p>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Puducherry Technological
-            University (PTU) is the first state University of Union Territory of
-            Puducherry. It seamlessly came into existence on 5th September 2020
-            upon the elevation of erstwhile Pondicherry Engineering College -
-            PEC (established in the year 1985 under the 7th five-year plan) with
-            the University status. NIRF, MHRD, Govt. of India has ranked the
-            University at 150 under the category of engineering education. PTU
-            alumin are spread far and wide across the global holding eminent
-            positions in top global Corporates, Universities and Civil Services.
-            The university offers nine undergraduate, thirteen post-graduate
-            courses and Ph.D programmes. The National Board of Accreditation
-            (NBA) of AICTE had accredited five undergraduate courses. PTU-ATAL
-            Incubation center is fully supported and funded by ATAL Innovation
-            Mission (AIM), National Institution for Transforming India (NITI)
-            Aayog, Government of India. PTU has been a prolific recipient of
-            research funding from the Indian government agencies including
-            Ministry of Human Resource Development (MHRD), Department of Science
-            & Technology (DST), Council of Scientific & Industrial Research
-            (CSIR) etc. through several research projects undertaken by the
-            faculty. PTU has been selected by MHRD, Government of India to
-            receive Technical Education Quality Improvement Programme (TEQIP)
-            and Rashtriya Uchchatar Shiksha Abhiyan (RUSA) grants.{" "}
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Puducherry Technological University (PTU), the first State 
+            University of the Union Territory of Puducherry, was established on 5th September 2020 through the 
+            elevation of the erstwhile Pondicherry Engineering College (PEC), founded in 1985. Recognized for
+            excellence in technical education and research, PTU has been ranked in the 201–300 band in the
+            Engineering category of the National Institutional Ranking Framework (NIRF), Ministry of Education,
+            Government of India. The University offers a wide range of undergraduate, postgraduate, and doctoral
+            programmes, with several programmes accredited by the National Board of Accreditation (NBA).{" "}
+          </p>
+          <p>
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PTU is a leading center for innovation, research, and
+             entrepreneurship, supported by major national initiatives including ATAL Innovation Mission 
+             (AIM), TEQIP, and RUSA. The University has secured significant research funding from premier 
+             agencies such as DST, CSIR, and the Ministry of Education. With strong collaborations with 
+             reputed institutions and universities in India and abroad, PTU fosters global academic engagement
+             and cutting-edge research. Its distinguished alumni hold leadership positions in multinational 
+             corporations, renowned universities, research organizations, and public services across the world.
           </p>
         </div>
       </div>

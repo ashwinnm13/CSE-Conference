@@ -15,26 +15,22 @@ const Intro = () => {
           The ICAISDA - 2026
         </h1>
         <p>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The First International Conference 
-          on Artificial Intelligence and Secure Data Analytics (ICAISDA-2026) 
-          provides a global platform for researchers, academics, scientists, 
-          industry professionals, and students to discuss advancements in 
-          Artificial Intelligence and Secure Data Analytics. AI replicates 
-          human intelligence, driving innovation and addressing global challenges, 
-          while security in Data Analytics ensures data confidentiality, integrity, 
-          and availability through encryption and privacy-preserving techniques, 
-          essential for sectors like healthcare, finance, and government.{" "}
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Second International Conference on Artificial Intelligence
+           and Secure Data Analytics (ICAISDA-2026) provides a premier international platform for researchers, academicians,
+           scientists, industry professionals, and students to share research findings, exchange ideas, and discuss emerging
+           developments in Artificial Intelligence (AI) and Secure Data Analytics. AI is transforming industries through intelligent
+           automation, predictive decision-making, and innovative solutions to complex challenges, while Secure Data Analytics ensures
+           the confidentiality, integrity, privacy, and reliability of data across critical sectors such as healthcare, finance,
+           governance, education, and smart systems{" "}
         </p>
         <p>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The integration of Artificial Intelligence
-           and Secure Data Analytics is key to advancing technology while safeguarding privacy, 
-           security, and efficiency in the digital age, protecting digital ecosystems and countering 
-           cyber threats. ICAISDA-2026 fosters collaboration among global academic institutions, 
-           scientific organizations, and industry leaders, offering valuable networking and research 
-           opportunities. It encourages presentations, sharing best practices, and proposing actionable 
-           strategies to leverage Artificial Intelligence and Secure Data Analytics in addressing evolving 
-           technological demands. The conference is planned to be held in a hybrid format; however, 
-           the organizers strongly encourage participants to attend in person whenever possible. 
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ICAISDA-2026 aims to promote collaboration among global academic institutions,
+           research organizations, and industry leaders to advance intelligent and secure digital technologies. The conference
+           offers opportunities for presenting innovative research, sharing best practices, and exploring future directions in
+           AI-driven and data-centric systems. By fostering interdisciplinary discussions and professional networking, ICAISDA-2026
+           seeks to address emerging technological challenges and contribute to the development of trustworthy, resilient, and
+           sustainable digital ecosystems. The conference will be conducted in a hybrid mode, with participants encouraged to attend
+           in person whenever possible. 
         </p>
       </div>
     </div>

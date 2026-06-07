@@ -13,21 +13,22 @@ const CSE = () => {
             About CSE DEPARTMENT
           </h1>
           <p>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Department of Computer
-            Science and Engineering of Puducherry Technological University has
-            twenty-two highly experienced faculty with all doctoral degree
-            holders from Top Indian University’s. Currently more than fifty
-            scholars are persuing research in various fields of computer science
-            and engineering. Every year significant number of papers are published in
-            the reputed indexed journal by the faculty and scholar. The
-            Department offers one Undergraduate course, three specialized Post
-            Graduate Programmes in Data Science, Information Security, Master of
-            Computer Applications and is a recognized research center for
-            Quality Improvement Programme by MHRD. The department has well
-            equipped computer laboratories with more than 400 computers and a
-            Research Laboratory. The faculty members are actively involved in
-            implementing various Consultancy and Collaborative projects funded
-            by Central and State Government.
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Department of Computer Science and Engineering (CSE)
+            at Puducherry Technological University has twenty-two highly qualified faculty members and over
+            fifty research scholars pursuing doctoral research in diverse areas of computing. The department 
+            offers undergraduate programmes in Computer Science and Engineering and Artificial Intelligence &
+            Data Science, postgraduate programmes in Data Science, Information Security, and MCA, along with 
+            Ph.D. programmes. Faculty members and research scholars regularly publish their work in reputed
+            national and international journals and conferences.{" "}
+          </p>
+          <p>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The department is recognized as a research center under
+            the Quality Improvement Programme (QIP) and is equipped with modern laboratories comprising over
+            400 computer systems and dedicated research facilities. Faculty members actively undertake funded
+            research, consultancy, and collaborative projects. The department also maintains strong industry 
+            linkages through MoUs with leading organizations and hosts a Centre of Excellence in Artificial 
+            Intelligence, established by OneBill, and an Innovation Centre for Intelligent Computing and Research, 
+            jointly established by Egnora and the PTU Alumni Association.
           </p>
         </div>
       </div>
