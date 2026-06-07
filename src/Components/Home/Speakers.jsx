@@ -1,40 +1,39 @@
 import React from "react";
 import profilePlaceHolder from "../../assets/Images/profilePlaceHolder.jpg";
-import krishnamohan from "../../assets/Images/keynote 2026/Dr.C.Krishna Mohan.jpg";
-import peterrevesz from "../../assets/Images/keynote 2026/Dr.Peter Z. Revesz.jpg";
-import balaji from "../../assets/Images/keynote 2026/Dr.Balaji Palanisamy.jpg";
-import rajarajan from "../../assets/Images/keynote 2026/Dr.Rajarajan Sivaraj.png";
 import nirfBanner from "../../assets/images/nirf banner.png";
 
 const Speakers = () => {
-  const speakers = [
+  const keynoteSpeakers = [
     {
-      image: krishnamohan,
+      image: "/images/keynote-2026/krishna-mohan.jpg",
       name: "Dr. C. Krishna Mohan",
       designation: "Professor",
       university: "Department of Computer Science and Engineering, IIT Hyderabad",
       keynote: "Keynote Speaker",
     },
     {
-      image: peterrevesz,
+      image: "/images/keynote-2026/peter-revesz.jpg",
       name: "Dr. Peter Z. Revesz",
       designation: "Professor",
       university: "University of Nebraska-Lincoln, Lincoln, USA",
-      keynote: "Computational Decipherment of the Indus Valley Script: Recent Progress and Future Possibilities",
+      keynote:
+        "Computational Decipherment of the Indus Valley Script: Recent Progress and Future Possibilities",
     },
     {
-      image: balaji,
+      image: "/images/keynote-2026/balaji-palanisamy.jpg",
       name: "Dr. Balaji Palanisamy",
       designation: "Associate Professor",
       university: "School of Computing and Information, University of Pittsburgh, USA",
-      keynote: "Adversarial Attacks in Virtual Reality: Detection, Prevention, and Defense",
+      keynote:
+        "Adversarial Attacks in Virtual Reality: Detection, Prevention, and Defense",
     },
     {
-      image: rajarajan,
+      image: "/images/keynote-2026/rajarajan-sivaraj.png",
       name: "Dr. Rajarajan Sivaraj",
       designation: "Vice President of Solution Architecture",
       university: "Aira Technologies, USA",
-      keynote: "INTelligence-of-Things: Scalable and Practical AI for Large-Scale Operational Systems",
+      keynote:
+        "INTelligence-of-Things: Scalable and Practical AI for Large-Scale Operational Systems",
     },
   ];
 
@@ -44,7 +43,7 @@ const Speakers = () => {
         Keynote Speakers
       </h2>
       <div className="mt-6 md:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-10">
-        {speakers.map((ele, ind) => (
+        {keynoteSpeakers.map((ele, ind) => (
           <div className="flex flex-col items-center" key={ind}>
             <div className="min-w-40 min-h-40 md:min-w-48 md:min-h-48 max-w-48 max-h-48 relative rounded-full flex justify-center items-center group cursor-pointer">
               <div className="absolute bg-blue-500 w-full h-full rounded-full -z-10 -translate-x-2 -translate-y-2 shadow-lg"></div>
@@ -66,30 +65,46 @@ const Speakers = () => {
 
       {/* ICAISDA-2025 Proceedings */}
       <div className="mt-20 max-w-3xl w-full mx-4 text-left bg-gray-900 p-6 rounded-lg">
-  <h2 className="text-2xl md:text-3xl font-bold text-yellow-300 mb-4">ICAISDA-2025 Proceedings</h2>
-  <ul className="text-white list-disc list-inside space-y-2 md:text-lg">
-    <li>
-      The conference proceedings are available at:{" "}
-      <a href="https://atlantis-press.com/proceedings/icaisda-25" target="_blank" rel="noopener noreferrer" className="text-yellow-300 underline hover:text-yellow-200">
-        https://atlantis-press.com/proceedings/icaisda-25
-      </a>{" "}
-      (Springer Nature)
-    </li>
-    <li>
-      The extended versions of 34 papers presented at the conference have been published in Gongcheng Kexue Yu Jishu / Advanced Engineering Journal (Scopus-indexed).
-    </li>
-  </ul>
-</div>
+        <h2 className="text-2xl md:text-3xl font-bold text-yellow-300 mb-4">
+          ICAISDA-2025 Proceedings
+        </h2>
+        <ul className="text-white list-disc list-inside space-y-2 md:text-lg">
+          <li>
+            The conference proceedings are available at:{" "}
+            <a
+              href="https://atlantis-press.com/proceedings/icaisda-25"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-300 underline hover:text-yellow-200"
+            >
+              https://atlantis-press.com/proceedings/icaisda-25
+            </a>{" "}
+            (Springer Nature)
+          </li>
+          <li>
+            The extended versions of 34 papers presented at the conference have
+            been published in Gongcheng Kexue Yu Jishu / Advanced Engineering
+            Journal (Scopus-indexed).
+          </li>
+        </ul>
+      </div>
 
       {/* NIRF Banner */}
       <div className="mt-10 max-w-3xl w-full mx-4">
-        <img src={nirfBanner} alt="NIRF Banner" className="w-full rounded-xl shadow-lg" />
+        <img
+          src={nirfBanner}
+          alt="NIRF Banner"
+          className="w-full rounded-xl shadow-lg"
+        />
       </div>
 
       {/* Query Email */}
       <p className="mt-6 text-red-500 font-semibold text-lg md:text-xl">
         Any queries please mail to:{" "}
-        <a href="mailto:icaisda@ptuniv.edu.in" className="underline hover:text-red-400">
+        <a
+          href="mailto:icaisda@ptuniv.edu.in"
+          className="underline hover:text-red-400"
+        >
           icaisda@ptuniv.edu.in
         </a>
       </p>
@@ -100,11 +115,21 @@ const Speakers = () => {
           Key Highlights
         </h1>
         <ul className="text-white text-left list-disc list-inside space-y-3 md:text-lg px-2 md:px-4">
-          <li>Technical Tracks on Artificial Intelligence, Secure Computing, Communication, Secure Data Analytics and Internet of Things</li>
+          <li>
+            Technical Tracks on Artificial Intelligence, Secure Computing,
+            Communication, Secure Data Analytics and Internet of Things
+          </li>
           <li>Distinguished keynote speakers and Insightful Plenary sessions</li>
-          <li>All the accepted papers will be published in conference proceedings with ISBN</li>
-          <li>Choice for paper publications in a Reputed Journals with indexing</li>
-          <li>Opportunities to connect with National and International Experts</li>
+          <li>
+            All the accepted papers will be published in conference proceedings
+            with ISBN
+          </li>
+          <li>
+            Choice for paper publications in a Reputed Journals with indexing
+          </li>
+          <li>
+            Opportunities to connect with National and International Experts
+          </li>
           <li>Best Paper Awards</li>
         </ul>
       </div>
