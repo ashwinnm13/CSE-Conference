@@ -61,6 +61,18 @@ const Speakers = () => {
         ))}
       </div>
 
+       {/* Button for ICAISDA-25 Website */}
+      <div className="mt-10">
+        <a
+          href="https://ptuniv.edu.in/icaisda25/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition duration-300"
+        >
+          Visit ICAISDA-25 Website
+        </a>
+      </div>
+
       {/* ICAISDA-2025 Proceedings */}
       <div className="mt-20 max-w-3xl w-full mx-4 text-left bg-gray-900 p-6 rounded-lg">
         <h2 className="text-2xl md:text-3xl font-bold text-yellow-300 mb-4">
